@@ -27,7 +27,7 @@ class UserListViewCell: UITableViewCell {
     override func layoutSubviews() {
         
         name.text = userDetails.name
-        phone.text = userDetails.phone
+        phone.text = "Phone:  \(userDetails.phone)"
     }
     
     func  setUpCellView() {
@@ -43,6 +43,7 @@ class UserListViewCell: UITableViewCell {
             let field = UILabel(frame: .zero)
             field.translatesAutoresizingMaskIntoConstraints = false
             field.font = UIFont.systemFont(ofSize: 20.0)
+            field.textColor = .blue
             return field
         }()
         
@@ -59,13 +60,9 @@ class UserListViewCell: UITableViewCell {
             return stack
         }()
         
+        mainStack.layoutMargins = UIEdgeInsets(top: 5, left: 20, bottom: 5, right: 0)
+        mainStack.isLayoutMarginsRelativeArrangement = true
         
-        self.contentView.backgroundColor = .lightGray
-
-        self.layoutMargins.bottom = 5
-        self.layoutMargins.top = 5
-        self.layoutMargins.left = 5
-        self.layoutMargins.right = 5
         self.contentView.addSubview(mainStack)
         
         mainStack.addArrangedSubview(name)

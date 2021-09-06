@@ -33,7 +33,7 @@ class UserListViewController: UIViewController, UserListView {
     }
     
     func setUpViews()  {
-        
+        self.title = "Users"
         self.view.backgroundColor = .white
         self.navigationItem.hidesBackButton = true
 

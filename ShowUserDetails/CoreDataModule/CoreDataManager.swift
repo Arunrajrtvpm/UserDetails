@@ -15,6 +15,7 @@ class CoreDataManager {
     
     private init(){}
     
+    @available(iOS 13.0, *)
     func fetchData(completionHandler: (Result<[NSManagedObject], Error>)->()) {
         
         guard let appDelegate =
