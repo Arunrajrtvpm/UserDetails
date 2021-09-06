@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7A640198-72ED-4959-9F0B-14D5E4D1A067"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C30B9F88-28B2-452C-9746-1081275C719B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShowUserDetails/UserListModule/UserListInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "getList(pageNumber:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DE7D5245-CB1E-4034-98B4-1557C554EB4B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShowUserDetails/UserListModule/UserListInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "getList(pageNumber:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DE7D5245-CB1E-4034-98B4-1557C554EB4B - 41c05b2031956796"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShowUserDetails.UserListInteractor.getList(pageNumber: Swift.Int, completionHandler: (Swift.Result&lt;Swift.Array&lt;ShowUserDetails.UserListViewModel&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "ShowUserDetails"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ajr/Desktop/Leader_Group/ShowUserDetails/ShowUserDetails/UserListModule/UserListInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "534">
+               </Location>
+               <Location
+                  uuid = "DE7D5245-CB1E-4034-98B4-1557C554EB4B - 35dd1338313dddbb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Result&lt;Swift.Array&lt;ShowUserDetails.UserListViewModel&gt;, Swift.Error&gt;) -&gt; () in ShowUserDetails.UserListInteractor.getList(pageNumber: Swift.Int, completionHandler: (Swift.Result&lt;Swift.Array&lt;ShowUserDetails.UserListViewModel&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "ShowUserDetails"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ajr/Desktop/Leader_Group/ShowUserDetails/ShowUserDetails/UserListModule/UserListInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "148">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D4B44850-0998-4DEE-B26B-339D06C849AC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShowUserDetails/UserListModule/UserListInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "getList(pageNumber:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "774275CD-FF5C-4FDA-B292-56C37FEB48E8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShowUserDetails/UserListModule/UserListInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "fetchData(completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "219D2EE3-4136-47C9-9514-139EC77CA20D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShowUserDetails/UserListModule/UserListInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "getList(pageNumber:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
