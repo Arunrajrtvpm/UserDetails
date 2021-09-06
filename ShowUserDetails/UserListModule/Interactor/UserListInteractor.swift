@@ -1,8 +1,8 @@
 //
 //  UserListInteractor.swift
-//  OpenTrents_MachineTest
+//  ShowUserDetails
 //
-//  Created by Arunraj on 02/08/21.
+//  Created by Arunraj on 06/09/21.
 //
 
 import Foundation
@@ -14,7 +14,7 @@ protocol UserListUseCases {
 }
 
 class UserListInteractor: UserListUseCases {
-   
+    
     let service: UserListService
     
     init(service : UserListService) {
@@ -35,16 +35,6 @@ class UserListInteractor: UserListUseCases {
                         CoreDataManager.instance.save(data: item)
                     }
                     
-                    self.fetchData { response in
-                        switch response{
-                        case .success(let list):
-                            completionHandler(.success(list))
-
-                        case .failure(_):
-                            break
-                        }
-                    }
-                    
                     let viewModel = list.map({UserListViewModel(model: $0)})
                     
                     completionHandler(.success(viewModel))
@@ -58,7 +48,7 @@ class UserListInteractor: UserListUseCases {
                 switch response{
                 case .success(let list):
                     completionHandler(.success(list))
-
+                    
                 case .failure(_):
                     break
                 }
@@ -67,14 +57,11 @@ class UserListInteractor: UserListUseCases {
     }
     
     
-    
-    
     func fetchData(completionHandler: @escaping (Result<[UserListViewModel], Error>)->()) {
         CoreDataManager.instance.fetchData { response in
             switch response{
             
             case .success(let data):
-                
                 
                 let userList = data as? [Users]
                 
@@ -90,8 +77,6 @@ class UserListInteractor: UserListUseCases {
                                                    phone: item.phone ?? "",
                                                    website: item.website ?? "",
                                                    company: nil)
-                    
-                    
                     newData.append(new)
                 })
                 
@@ -101,7 +86,7 @@ class UserListInteractor: UserListUseCases {
                 completionHandler(.success(newData))
                 
             case .failure(_):
-                print("Coredata Fetch error")
+                print("Core data Fetch error")
             }
         }
     }

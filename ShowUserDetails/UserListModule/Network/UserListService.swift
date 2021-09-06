@@ -1,8 +1,8 @@
 //
 //  UserListService.swift
-//  OpenTrents_MachineTest
+//  ShowUserDetails
 //
-//  Created by Arunraj on 02/08/21.
+//  Created by Arunraj on 06/09/21.
 //
 
 import Foundation
@@ -10,13 +10,13 @@ import Alamofire
 
 protocol UserListService {
     func fetchList(pageNumber: Int, completionHandler: @escaping (Result<[UserDetails], Error>)->())
-        
+    
 }
 
 class UserListHttpService: UserListService {
     
     func fetchList(pageNumber: Int, completionHandler: @escaping (Result<[UserDetails], Error>)->())  {
-                
+        
         DispatchQueue.global(qos: .background).async {
             
             AF.request("https://jsonplaceholder.typicode.com/users").responseData { response in
@@ -28,7 +28,7 @@ class UserListHttpService: UserListService {
                         
                         let listData = try JSONDecoder().decode([UserDetails].self, from: data)
                         completionHandler(.success(listData))
-                            print(listData)
+                        print(listData)
                     }
                     catch let error{
                         completionHandler(.failure(error))
@@ -40,5 +40,5 @@ class UserListHttpService: UserListService {
             }
         }
     }
-   
+    
 }

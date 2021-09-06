@@ -1,8 +1,8 @@
 //
 //  UserListViewController.swift
-//  OpenTrents_MachineTest
+//  ShowUserDetails
 //
-//  Created by Arunraj on 02/08/21.
+//  Created by Arunraj on 06/09/21.
 //
 
 import UIKit

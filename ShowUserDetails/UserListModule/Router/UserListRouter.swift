@@ -1,8 +1,8 @@
 //
 //  UserListRouter.swift
-//  OpenTrents_MachineTest
+//  ShowUserDetails
 //
-//  Created by Arunraj on 02/08/21.
+//  Created by Arunraj on 06/09/21.
 //
 
 import Foundation
@@ -27,14 +27,12 @@ class UserListRouter: UserListRouting {
         vc.userDetails = details
         
         let nav = UINavigationController(rootViewController: vc)
-        nav.navigationBar.barTintColor = .darkGray
+        nav.navigationBar.barTintColor = .lightGray
         nav.modalPresentationStyle = .formSheet
         nav.view.backgroundColor = .white
         
         let popup = nav.popoverPresentationController
         popup?.permittedArrowDirections = .init(rawValue: 0)
-//        popup?.sourceView =  (self.view as! UIViewController)
-//        popup?.sourceRect =  (self.view as! UIViewController).bounds
         (self.view as! UIViewController).present(nav, animated: true, completion: nil)
         
     }

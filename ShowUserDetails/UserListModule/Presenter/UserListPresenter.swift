@@ -1,8 +1,8 @@
 //
 //  UserListPresenter.swift
-//  OpenTrents_MachineTest
+//  ShowUserDetails
 //
-//  Created by Arunraj on 02/08/21.
+//  Created by Arunraj on 06/09/21.
 //
 
 import Foundation
@@ -15,7 +15,7 @@ protocol UserListPresentation {
 }
 
 class UserListPresenter: UserListPresentation {
-   
+    
     weak var view: UserListViewController?
     
     let router: UserListRouting
@@ -56,5 +56,5 @@ class UserListPresenter: UserListPresentation {
         self.router.showUserDetails(with: data)
         
     }
-        
+    
 }
