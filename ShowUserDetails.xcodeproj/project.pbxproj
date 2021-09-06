@@ -117,7 +117,7 @@
 		6549204526E5D035001C6019 /* UserDetailsModule */ = {
 			isa = PBXGroup;
 			children = (
-				6549204626E5D035001C6019 /* UserDetailsViewController.swift */,
+				65A70D6426E61ED90026D382 /* View */,
 			);
 			path = UserDetailsModule;
 			sourceTree = "<group>";
@@ -125,14 +125,13 @@
 		6549204726E5D035001C6019 /* UserListModule */ = {
 			isa = PBXGroup;
 			children = (
+				65A70D6326E61EC20026D382 /* Network */,
+				65A70D6226E61EB80026D382 /* Presenter */,
+				65A70D6126E61EA90026D382 /* Router */,
+				65A70D6026E61E9A0026D382 /* Interactor */,
+				65A70D5F26E61E8A0026D382 /* View */,
 				65428AC426E5FEE2005C6FBD /* Model */,
-				6549204826E5D035001C6019 /* UserListService.swift */,
-				6549204926E5D035001C6019 /* UserListRouter.swift */,
 				6549204A26E5D035001C6019 /* UserListModuleBuilder.swift */,
-				6549204B26E5D035001C6019 /* UserListViewCell.swift */,
-				6549204C26E5D035001C6019 /* UserListInteractor.swift */,
-				6549204D26E5D035001C6019 /* UserListPresenter.swift */,
-				6549204E26E5D035001C6019 /* UserListViewController.swift */,
 			);
 			path = UserListModule;
 			sourceTree = "<group>";
@@ -143,6 +142,55 @@
 				6549205A26E5D099001C6019 /* CoreDataManager.swift */,
 			);
 			path = CoreDataModule;
+			sourceTree = "<group>";
+		};
+		65A70D5F26E61E8A0026D382 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6549204E26E5D035001C6019 /* UserListViewController.swift */,
+				6549204B26E5D035001C6019 /* UserListViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		65A70D6026E61E9A0026D382 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				6549204C26E5D035001C6019 /* UserListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		65A70D6126E61EA90026D382 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6549204926E5D035001C6019 /* UserListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		65A70D6226E61EB80026D382 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6549204D26E5D035001C6019 /* UserListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		65A70D6326E61EC20026D382 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6549204826E5D035001C6019 /* UserListService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		65A70D6426E61ED90026D382 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6549204626E5D035001C6019 /* UserDetailsViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		B3C8442E7226C9CA676DDD47 /* Frameworks */ = {
